@@ -1,0 +1,56 @@
+body{
+    background-color: #FCA6C9 ;
+}
+img{
+    width: 140px;
+    height:175px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hover_header{
+    color: white;
+    text-align: center;
+    font-size:50px;
+    font-family: helvetica;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.hover_header:hover{
+    color: black;
+}
+
+.education{
+    color: white;
+    display: content;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-family: helvetica;
+}
+.bullets{
+    color: black;
+    margin-left: 430px;
+    text-align: left;
+    font-size: 14px ;
+    font-family: helvetica;
+    font-weight: bold ;
+}
+.quote{
+    color: white;
+    text-align: center;
+    max-width: 250px;
+    font-size: 30px ;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: garamond;
+}
+footer{
+    color: black;
+    text-align: center;
+    font-size: 13px ;
+    font-family: helvetica;
+    line-height: .3;
+    padding-bottom: 40px;
+}
