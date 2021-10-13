@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Condensed&display=swap');
+
 #content{
     max-width: 1600px;
     margin:0 auto;
@@ -7,10 +9,14 @@ nav a{
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover{
     background-color: black;
+}
+.home-title{
+    margin-top: 10px;
 }
 #hero-msg h1{
 
@@ -21,12 +27,17 @@ nav a:hover{
     text-align: center;
 }
 
+
 #button-box{
     text-align: center;
 }
 
 main section{
     text-align: center;
+}
+
+main section img{
+    box-sizing: border-box;
 }
 
 #background{
@@ -36,39 +47,58 @@ main section{
 
 header{
     background-color:#134266  ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
 }
 
 body{
     background-color: #78c5d7;
+    font-family: 'Roboto Condensed' Lato, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin:0;
 }
 
-.book{
+h2{
+    margin: 0;
+}
+.book, .join{
     background-color:#134266;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
-.book:hover{
+.book:hover, .join:hover{
     background-color: black;
 }
-
-.join{
-    background-color: #134266;
-    color: white;
-    text-decoration: none;
+.card-img{
+    border:10px solid black;
 }
 
-.join:hover{
-    background-color: black;
+.rivers-card, .camping-card, .rapids-card{
+    margin:200px 0;
 }
 
 .msg{
     background-color: white;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p{
+    font-size:.8em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #134266;
     color:white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     color: white;
@@ -81,6 +111,7 @@ footer a:hover{
 
 #social{
     color: white;
+    padding-top: 15px;
 }
 
 .logo{
@@ -89,4 +120,5 @@ footer a:hover{
 
 .icon{
     width:80px;
+    padding-top: 10px;
 }

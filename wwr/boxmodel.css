@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Condensed&display=swap');
+
+body{
+    background-color: green;
+}
+h2{
+    font-size: 40px;
+}
+.about{
+    background-color: plum;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+.about h2{
+    color:purple;
+
+}
+.contact{
+    background-color: blue;
+    border: 1px solid black;
+}
+.contact p{
+    color: white;
+}
+.info{
+    width:150px;
+    border-radius: 150px;
+    background-color: steelblue;
+    text-align: center;
+    height: 150px;
+    margin:0 auto;
+}
+.info h2{
+    font-size: 30px;
+    padding-top: 36px;
+}
+main{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+
+}
+main section{
+    border: 1px dotted black;
+}
+.div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
