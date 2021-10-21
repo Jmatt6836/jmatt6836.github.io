@@ -1,0 +1,75 @@
+body {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 20px;
+}
+.content{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+.beans {
+    max-width: 50%;
+    
+}
+body h1{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5px;
+}
+body p{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 90px;
+}
+.email{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    max-height: 50px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius:5px ;
+    
+}
+.name{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    max-width: 100%;
+    margin-top: 70px;
+    max-height: 50px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.checkbox{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin-left: 20px;
+    margin-top: -30px;
+    
+}
+.checkbox label {
+    
+    grid-row: 3/4;
+}
+body label{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin-left: 12px;
+}
+.sub{
+    height: 60px;
+    width: 200px;
+    grid-row: 3/4;
+    grid-column: 2/4;
+    background-color: orange;
+    display: inline-block;
+    color: white;
+    border: 0 auto;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 250px;
+}
