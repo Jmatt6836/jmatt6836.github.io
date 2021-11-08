@@ -150,7 +150,7 @@ h2{
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px rgb(66, 66, 66);
 }
 
 .msg p{
@@ -171,19 +171,23 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+#social:hover{
+    background-color: black;
+}
 footer a{
     color: white;
     text-decoration: none;
 }
 footer a:hover{
     background-color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #social{
     color: white;
     padding-top: 15px;
 }
+
 
 .logo{
     width: 80px;
