@@ -8,9 +8,10 @@
 nav{
     display: flex;
     justify-content: space-around;
+    font-size: 30px;
 }
 #logo_link{
-    padding-top: 13px;
+    padding-top: 10px;
     justify-self: center;
     align-self: center;
 }
@@ -53,6 +54,7 @@ nav a:hover{
     color: white;
     text-align: center;
     font-size: 80px;
+    text-shadow: 2px 2px 2px gray;
 }
 
 #hero-msg h4{
