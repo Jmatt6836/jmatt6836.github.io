@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto+Condensed&display=swap');
 
 #content{
+
     max-width: 1600px;
     margin:0 auto;
 }
@@ -9,7 +10,7 @@ nav{
     justify-content: space-around;
 }
 #logo_link{
-    padding-top: 5px;
+    padding-top: 13px;
     justify-self: center;
     align-self: center;
 }
@@ -31,6 +32,10 @@ nav a:hover{
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
+#hero-img{
+    width: 100%;
+    
+}
 #hero-box {
     grid-column: 1/5;
     grid-row: 1/3;
@@ -43,24 +48,28 @@ nav a:hover{
     margin-top: 100px;
 }
 
+
 #hero-msg h1{
     color: white;
     text-align: center;
+    font-size: 80px;
 }
 
 #hero-msg h4{
     text-align: center;
     color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px gray;
 }
 .home-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     
 }
-
-#button-box{
+.button-box{
     text-align: center;
 }
+
 
 main section{
     text-align: center;
@@ -72,7 +81,7 @@ main section img{
 
 #background{
     height: 725px;
-    background-color: #DB7F67;
+    background-color: #FCE172;
 }
 
 header{
@@ -104,6 +113,7 @@ h2{
     margin-top: 50px;
     border-radius: 5px;
     grid-column: 2/3;
+    margin:0 auto;
 }
 
 .book:hover, .join:hover{
