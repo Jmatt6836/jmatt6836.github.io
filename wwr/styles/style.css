@@ -28,22 +28,22 @@ nav a:hover{
 .home-title{
     margin-top: 10px;
 }
-#hero {
+#hero, #river-banner {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
-#hero-img{
+#hero-img, #wide{
     width: 100%;
     
 }
-#hero-box {
+#hero-box, #banner-box{
     grid-column: 1/5;
     grid-row: 1/3;
     z-index: -1;
     max-width: 100%;
 }
-#hero-msg{
+#hero-msg, #banner-msg{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
@@ -56,14 +56,21 @@ nav a:hover{
     font-size: 80px;
     text-shadow: 2px 2px 2px gray;
 }
+#banner-msg h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px gray;
+}
 
-#hero-msg h4{
+
+#hero-msg, #banner-msg h4{
     text-align: center;
     color: white;
     font-size: 30px;
     text-shadow: 2px 2px 2px gray;
 }
-.home-grid{
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     
@@ -142,11 +149,11 @@ h2{
     grid-column: 2/4;
     grid-row: 2/3;
 }
-.camping-card{
+.camping-card {
     grid-column: 5/7;
     grid-row: 2/3;
 }
-.rapids-card{
+.rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
 }
@@ -190,14 +197,18 @@ footer a{
     color: white;
     text-decoration: none;
 }
-footer a:hover{
+footer h3 a:hover{
     background-color: black;
     text-decoration: none;
 }
 
-#social{
+.social{
     color: white;
     padding-top: 15px;
+}
+.social :hover{
+    border: 5px solid black;
+    text-decoration: none;
 }
 
 
@@ -209,31 +220,88 @@ footer a:hover{
     width:80px;
     padding-top: 10px;
 }
+
+.river-home{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    
+}
+.salmonriv, .coloriv, .grandriv{
+    margin:200px 0;
+    max-height: 400px;
+}
 .river-home h1{
     text-align: center;
 }
+.river-card{
+    height: 250px;
+    width: 250px;
+    border:10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.river-card:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
 .salmonriv{
-    height: 410px;
-   float: right;
-   
-    
-}
-.river-1{
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 20px;
-    padding-left: 15px;
-    
-}
-.river-1 h2{
-    font-size: 40px;
-    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    max-height: 30px;
 }
 .coloriv{
-    
+    grid-column: 5/7;
+    grid-row: 2/3;
 }
+.grandriv{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.overlay-1, .overlay-2, .overlay-3 {
+    position: absolute;
+    margin-top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .salmonriv:hover .overlay-1 {
+    opacity: 1;
+  }
+  .coloriv:hover .overlay-2 {
+    opacity: 1;
+  }
+  .grandriv:hover .overlay-3 {
+    opacity: 1;
+  }
+.river-1, .river-2, .river-3{
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+  }
+    
+
+.text-portion{
+    grid-column: 1/11;
+    grid-row: 3/4;
+}
+
+    
+
 .river-2 h2{
     float: inline-start;
 }
