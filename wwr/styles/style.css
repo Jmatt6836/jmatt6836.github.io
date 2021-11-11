@@ -257,7 +257,25 @@ footer h3 a:hover{
     grid-column: 8/10;
     grid-row: 2/3;
 }
-.overlay-1, .overlay-2, .overlay-3 {
+.overlay-1{
+    position: absolute;
+    padding-top: 100px;
+    margin-top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    max-width: 500px;
+    text-align: center;
+    max-height: 700px;
+    grid-column: 2/4;
+    
+  }
+  .overlay-2 {
     position: absolute;
     margin-top: 100px;
     bottom: 0;
@@ -268,6 +286,28 @@ footer h3 a:hover{
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
+    max-width: 500px;
+    text-align: center;
+    max-height: 700px;
+    grid-column: 5/7;
+    
+  }
+    .overlay-3 {
+    position: absolute;
+    margin-top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    max-width: 500px;
+    text-align: center;
+    max-height: 700px;
+    grid-column: 8/10;
+    
   }
   
   .salmonriv:hover .overlay-1 {
@@ -278,8 +318,9 @@ footer h3 a:hover{
   }
   .grandriv:hover .overlay-3 {
     opacity: 1;
+    grid-column: 8/10;
   }
-.river-1, .river-2, .river-3{
+.river-1{
     font-size: 18px;
     width: 100%;
     color: white;
@@ -292,6 +333,37 @@ footer h3 a:hover{
     transform: translate(-50%, -50%);
     text-align: center;
     margin-top: 100px;
+    grid-column: 2/4;
+  }
+   .river-2{
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    grid-column: 5/7;
+  }
+  .river-3{
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    grid-column: 8/10;
   }
     
 
@@ -302,9 +374,6 @@ footer h3 a:hover{
 
     
 
-.river-2 h2{
-    float: inline-start;
-}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
