@@ -264,7 +264,7 @@ footer h3 a:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+   height: 300px;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -281,7 +281,7 @@ footer h3 a:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+   height: min-content;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -294,11 +294,11 @@ footer h3 a:hover{
   }
     .overlay-3 {
     position: absolute;
-    margin-top: 100px;
+    top: inherit;
     bottom: 0;
-    left: 0;
+    left: inherit;
     right: 0;
-    height: 100%;
+    height: 500px;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -319,6 +319,7 @@ footer h3 a:hover{
   .grandriv:hover .overlay-3 {
     opacity: 1;
     grid-column: 8/10;
+    z-index: 2;
   }
 .river-1{
     font-size: 18px;
@@ -332,7 +333,7 @@ footer h3 a:hover{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 230px;
     grid-column: 2/4;
   }
    .river-2{
@@ -342,12 +343,12 @@ footer h3 a:hover{
     font-size: 20px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 127%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 230px;
     grid-column: 5/7;
   }
   .river-3{
@@ -357,13 +358,14 @@ footer h3 a:hover{
     font-size: 20px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 210%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 230px;
     grid-column: 8/10;
+    z-index: 3;
   }
     
 

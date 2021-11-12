@@ -25,6 +25,10 @@ Fonts are separated by a | */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
+img{
+  max-width: 300px;
+}
+
 
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
