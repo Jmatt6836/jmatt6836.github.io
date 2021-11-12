@@ -257,117 +257,40 @@ footer h3 a:hover{
     grid-column: 8/10;
     grid-row: 2/3;
 }
-.overlay-1{
-    position: absolute;
-    padding-top: 100px;
-    margin-top: 100px;
-    bottom: 0;
+.modal-1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     left: 0;
-    right: 0;
-   height: 300px;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-    max-width: 500px;
-    text-align: center;
-    max-height: 700px;
-    grid-column: 2/4;
-    
-  }
-  .overlay-2 {
-    position: absolute;
-    margin-top: 100px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-   height: min-content;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-    max-width: 500px;
-    text-align: center;
-    max-height: 700px;
-    grid-column: 5/7;
-    
-  }
-    .overlay-3 {
-    position: absolute;
-    top: inherit;
-    bottom: 0;
-    left: inherit;
-    right: 0;
-    height: 500px;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-    max-width: 500px;
-    text-align: center;
-    max-height: 700px;
-    grid-column: 8/10;
-    
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  .salmonriv:hover .overlay-1 {
-    opacity: 1;
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
   }
-  .coloriv:hover .overlay-2 {
-    opacity: 1;
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
   }
-  .grandriv:hover .overlay-3 {
-    opacity: 1;
-    grid-column: 8/10;
-    z-index: 2;
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
-.river-1{
-    font-size: 18px;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-top: 230px;
-    grid-column: 2/4;
-  }
-   .river-2{
-    font-size: 18px;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 127%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-top: 230px;
-    grid-column: 5/7;
-  }
-  .river-3{
-    font-size: 18px;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 210%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin-top: 230px;
-    grid-column: 8/10;
-    z-index: 3;
-  }
-    
 
 .text-portion{
     grid-column: 1/11;
