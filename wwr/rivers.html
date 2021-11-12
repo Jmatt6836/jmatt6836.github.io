@@ -36,9 +36,9 @@
                 <button id="salmon-button">Salmon River</button>
                 
                     
-                 <div id="myModal" class="modal-1">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
+                 <div id="myModal-1" class="modal-1">
+                    <div class="modal-content-1">
+                        <span class="close-1">&times;</span>
                     <h2>Main Fork of Salmon River, Idaho</h2>
                 <p>
                         Nestled deep in the Frank Church Wilderness of No Return winds the Salmon 
@@ -62,13 +62,13 @@
                     </div>
                     <script>
                         // Get the modal
-                        var modal = document.getElementById("myModal");
+                        var modal = document.getElementById("myModal-1");
                         
                         // Get the button that opens the modal
-                        var btn = document.getElementsById("salmon-button");
+                        var btn = document.getElementById("salmon-button");
                         
                         // Get the <span> element that closes the modal
-                        var span = document.getElementsByClassName("close")[0];
+                        var span = document.getElementsByClassName("close-1")[0];
                         
                         // When the user clicks the button, open the modal 
                         btn.onclick = function() {
@@ -92,9 +92,11 @@
 
             <section class="coloriv">
                  <img src="images/desolation-canyon.jpeg" alt="Photo of Colorado River" class="river-card" id="colorado">
-                 <h2>Colorado River</h2>
-                 <section class="overlay-2">
-                     <div class="river-2">
+                 <button id="colobutt"> Colorado River </button>
+                
+                 <div id="myModal-2" class="modal-2">
+                    <div class="modal-content-2">
+                        <span class="close-2">&times;</span>
                     <h2>Desolation and Gray Canyon, Utah</h2>
                     <p>
                         Winding through canyons in central Utah, in some of the most 
@@ -113,13 +115,43 @@
                         that the canyon tells.  
                     </p>
                      </div>
-                </section>
+                     <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal-2");
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("colobutt");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close-2")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                          modal.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                          modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                        </script>
+                
             </section>
 
             <section class="grandriv">
                 <img src="images/gc-photo.jpeg" alt="Image of the Grand Canyon River" class="river-card" id="grand">
-                <h2>Grand Canyon</h2>
-                <section class="overlay-3">
+               <button id="grandbutt"> Grand Canyon</button>
+
+               <div id="myModal-3" class="modal-3">
+                <div class="modal-content-3">
+                    <span class="close-3">&times;</span>
                     <div class="river-3">
                         <h2>Grand Canyon, Arizona</h2>
                     <p>This is the grand daddy of all canyons and the grand daddy of all 
@@ -137,7 +169,34 @@
                         rating scale, so we often refer to both.
                     </p>
                     </div>
-                </section>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal-3");
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("grandbutt");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close-3")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                          modal.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                          modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                        </script>
+                
 
             </section>
             </main>  
