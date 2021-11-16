@@ -119,10 +119,11 @@ h2{
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
-    margin-top: 50px;
+    margin-top: 60px;
     border-radius: 5px;
     grid-column: 2/3;
     margin:0 auto;
+    margin-top: 20px;
 }
 
 .book:hover, .join:hover{
@@ -257,6 +258,9 @@ footer h3 a:hover{
     grid-column: 8/10;
     grid-row: 2/3;
 }
+#large-salmon, #large-colorado, #large-grand{
+    max-width: 600px;
+}
 .modal-1 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -269,7 +273,7 @@ footer h3 a:hover{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  .modal-2 {
+.modal-2 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -281,7 +285,7 @@ footer h3 a:hover{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-   .modal-3 {
+.modal-3 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
