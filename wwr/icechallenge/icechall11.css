@@ -1,0 +1,10 @@
+body{
+    background-color: thistle;
+    display: block;
+    text-align: center;
+}
+body img{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
