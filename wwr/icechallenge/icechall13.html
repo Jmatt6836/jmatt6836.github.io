@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Challenge</title>
+    <link rel="stylesheet" href="icechall13.css">
+</head>
+<body>
+    <img src="images/bush's-homestyle-beans.jpeg" alt="a sweet can of Bush's Original style Baked Beans" class="beanscan" >
+
+    <h1>Sign Up</h1>
+    <label>
+        <input type="checkbox"  />
+        <div class="card">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </label>
+    <br>Once you entered it, you will not able to change it later.
+    <br>A password will be send to your email, so please make
+    <br>sure it is correct.</p>
+    <input class="input" type="text" placeholder="Enter Your Name" name="name" required>
+    <br>
+    <input class="input" type="text" placeholder="Enter Your Email" name="email" required>
+    <br>
+    <button type="button" class="submit">Sign Up</button>
+    
+
+    <button id="ASong" onClick="playPause()">
+        <audio
+          src="images/Bonk-good.mp3"
+          autoplay
+          
+        ></audio>
+        Song
+      </button>
+      
+      <script>
+        var aud = document.getElementById("submit").children[0];
+        var isPlaying = false;
+        aud.pause();
+      
+        function playPause() {
+          if (isPlaying) {
+            aud.pause();
+          } else {
+            aud.play();
+          }
+          isPlaying = !isPlaying;
+        }
+      </script>
+</body>
+</html>
