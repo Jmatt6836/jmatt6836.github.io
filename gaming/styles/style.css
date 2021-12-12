@@ -141,7 +141,7 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-#social:hover{
+.socials:hover{
     background-color: black;
 }
 footer a{
@@ -157,7 +157,7 @@ footer h3 a:hover{
     color: white;
     padding-top: 15px;
 }
-.social :hover{
+.socials:hover {
     border: 5px solid black;
     text-decoration: none;
 }
