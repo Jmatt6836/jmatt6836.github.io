@@ -18,6 +18,74 @@
         </nav>
     </header>
     <main>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/Gen-6-game_auto_x2.jpg" style="width:100%">
+              <div class="text">Generation 6 of Game Consoles</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/Gen-7-img_auto_x2.jpg" style="width:100%">
+              <div class="text">Generation 7 of Game Consoles</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/Gen-8-img_auto_x2.jpg" style="width:100%">
+              <div class="text">Generation 8 of Game Consoles</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/Gen-9-img_auto_x2.jpg" style="width:100%">
+                <div class="text">Generation 9 of Game Consoles</div>
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
         <img class="controllerimg" src="images/controllers.jpeg" alt="image for homepage" Photo by <a href="https://unsplash.com/@venson_chou?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Venson Chou</a> on <a href="https://unsplash.com/s/photos/gaming-console?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
         <p>
