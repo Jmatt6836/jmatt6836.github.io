@@ -132,7 +132,7 @@ h2{
 .card-img{
     border:10px solid black;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px #717665;
 }
 .card-img:hover {
     opacity: .6;

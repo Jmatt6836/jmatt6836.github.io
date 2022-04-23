@@ -1,7 +1,52 @@
 body{
-    background-color: turquoise;
+    background-color: white;
+    text-align: auto;
+    max-width: 600px;
+    margin:auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.add_border{
-    border: 5px solid black;
+
+header{
+    background-color: rgb(55, 110, 249);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+}
+
+
+.myfoto{
+    align-self: center;
+    margin-left: 50px;
+    max-width: 200px;
+    box-shadow: 5px 5px 10px #424341;
+   
+}
+.linklist{
+    border-top: 5px black;
+    
+}
+h1{
+    align-self: center;
+    color: white;
+}
+h2{
+    margin-left: 20px;
+}
+footer{
+    background-color: rgb(55, 110, 249); 
+    height: 100px; 
+    border-radius: 30px;
+    text-align: center;
+}
+.namefoot{
+    line-height: 20px;
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+.datefoot{
+    font-size: 15px;
+    color: yellow;
 }
