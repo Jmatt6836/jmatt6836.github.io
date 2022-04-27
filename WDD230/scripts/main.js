@@ -4,7 +4,7 @@
 let date = new Date();
 console.log(date);
 
-document.querySelector('img').setAttribute('src', 'images/Familypic.jpeg')
+//document.querySelector('img').setAttribute('src', 'images/Familypic.jpeg')
 let year = date.getFullYear();
 document.querySelector ('#currentyear').textContent = year;
 
