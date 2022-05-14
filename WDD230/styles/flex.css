@@ -19,6 +19,13 @@ nav ul{
 nav li{
     list-style-type: none;
     padding: 20px 51px;
+    display: none;
+}
+.responsive li{
+    display: block;
+}
+li:first-child{
+    display: block;
 }
 nav li a{
     color: black;
@@ -31,5 +38,11 @@ nav li a{
     nav ul{
         flex-direction: row;
     }
-    
-}
+    nav li{
+        display: block;
+    }
+
+    li:first-child{
+        display: none;
+    }
+}  
