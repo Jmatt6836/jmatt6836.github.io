@@ -3,6 +3,7 @@
 body{
     margin: 10px;
     font-family: Radio Canada;
+    color: white;
 }
 main{
     background-color: lightblue;
@@ -62,7 +63,7 @@ nav a:hover{
 
 }
 
-img{
+header img{
     max-width: 100px;
     float: left;
     
@@ -72,21 +73,44 @@ img{
 	border: 1px solid #bbb;
 	padding: 0.75rem;
 	background-color: #eee;
+    height: 30px;
+    color: black;
+}
+.hero{
+    position: relative;
+    background-color: lightblue;
+    border: none;
+}
+.hero-img{
+    max-width: 600px;
+    margin: auto;
+}
+.hero h2{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 30px;
+    text-shadow: 3px 3px rgba(0, 0, 0, .3);
+}
+.hero button{
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
 }
 
-section{
-    background-color: #ccc;
+ section{
+   background-color: #3B429F;
     border: 1px solid black;
-    height: 100px;
+    border-radius: 30px;
     margin: 10px;
-}
+ } 
 .spot-box{
-    height: 300px;
+    height: 500px;
 }
 .spot{
-    border: 1px solid black;
+    
     margin: 10px;
-    height: 130px;
+    height: 220px;
 }
 .spot3{
     display: none;
@@ -94,6 +118,25 @@ section{
 .join{
     display: none;
 }
+.join button{
+    margin-top: 20px;
+   
+}
+button{
+    background-color: cornflowerblue;
+    font-size: 1.5em;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, .3);
+}
+button:hover{
+    background-color: gray;
+}
+.weatherimg{
+    max-width: 100px;
+}
+
 footer{
     background-color: cornflowerblue; 
     height: 100px; 
@@ -148,7 +191,12 @@ footer{
     }
     .spot-box{
         grid-column: 1/4;
-        grid-row: 3/4;
+        grid-row: 3/5;
+        height: 500px;
+    }
+    .spot{
+        grid-column: 1/4;
+        grid-row: 3/5;
     }
     
 }
@@ -170,7 +218,8 @@ footer{
         }
     .spot3{
         display: block;
-        height: 130px;
+        margin: 10px;
+        height: 200px;
     }
     section{
         height: 100%;
@@ -178,6 +227,9 @@ footer{
     .hero{
         grid-column: 2/3;
         grid-row: 1/3;
+    }
+    .hero-img{
+        grid-column: 2/3;
     }
     .news{
         grid-column: 2/3;

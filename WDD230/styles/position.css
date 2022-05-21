@@ -1,0 +1,10 @@
+#parent{
+    background-color: lightblue;
+    height: 800px;
+    position: relative;
+}
+#child{
+    position: absolute;
+    top:10px;
+    left: 20px;
+}
