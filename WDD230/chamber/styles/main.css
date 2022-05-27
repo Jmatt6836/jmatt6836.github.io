@@ -85,6 +85,7 @@ header img{
 .hero-img{
     max-width: 600px;
     margin: auto;
+    object-fit: cover;
 }
 .hero h2{
     position: absolute;
@@ -96,7 +97,7 @@ header img{
 }
 .hero button{
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     right: 40px;
 }
 
@@ -140,22 +141,19 @@ button:hover{
 }
 
 footer{
+    display: flex;
     background-color: cornflowerblue; 
     height: 100px; 
-  
     text-align: center;
-    line-height: 40px;
-}
-.namefoot{
-    line-height: 20px;
-    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
+
 }
-.datefoot{
-    font-size: 20px;
-    color: black;
-}
+
+
 @media screen and (min-width: 650px) {
     main{
         grid-template-columns: 1fr 1fr 1fr;
