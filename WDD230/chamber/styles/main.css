@@ -5,6 +5,9 @@ body{
     font-family: Radio Canada;
     color: white;
 }
+#discover{
+    display: block;
+}
 main{
     background-color: lightblue;
     margin: 0px;
@@ -152,6 +155,9 @@ footer{
     font-size: 25px;
 
 }
+.downtown{
+    max-width: 500px;
+}
 
 
 @media screen and (min-width: 650px) {
@@ -197,6 +203,9 @@ footer{
     .spot{
         grid-column: 1/4;
         grid-row: 3/5;
+    }
+    img:hover{
+        transform: scale(1.6);
     }
     
 }
@@ -253,5 +262,7 @@ footer{
         grid-row: 1/4;
         height: 100%;
     }
-    
+    img:hover{
+        transform: scale(1.6);
+    }
 }
