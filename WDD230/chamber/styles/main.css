@@ -104,6 +104,38 @@ header img{
     bottom: 30px;
     right: 40px;
 }
+#joinpg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+#member{
+    background-color: #3B429F;
+    grid-column: 2/3;
+    font-size: 20px;
+
+}
+fieldset{
+    border: medium none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+form{
+    color: black;
+    padding: 25px;
+    
+
+}
+input{
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 0 5px;
+}
+input[type="radio"]{
+    display: inline-block;
+}
 
  section{
    background-color: #3B429F;

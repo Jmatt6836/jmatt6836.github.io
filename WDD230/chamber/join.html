@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Homepage of a ficticious Gilbert Chamber of Commmerece made by Josh Skouson.">
+    <title>Gilbert Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css" >
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script defer src="../scripts/main.js"></script>
+    <script defer src="../scripts/flex.js"></script>
+    <script defer src="scripts/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/Chamberlogo.webp" alt="Logo for City of Gilbert Chamber of Commerce">
+        <h1>Gilbert Chamber of Commerce</h1>
+        <nav>
+            <ul>
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+        <div class="meeting-alert">
+          <h2> Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+      </div>
+        <!-- <div>It has been <span class="sincelast"></span></div> -->
+    </header>
+    <main id="joinpg">
+        <form action="thank-you.html" method="get" autocomplete="on">
+            <fieldset>
+            <label for="fname">First Name *:</label>
+            <input id="fname" name="first_name" required>
+            </fieldset>
+            <label for="lname">Last Name *:</label>
+            <input id="lname" name="last_name" required>
+            <fieldset>
+            <label for="position">Position Title:</label>
+            <input id="position" type="text" name="bus_title_pos" minlength="7" pattern="[A-Za-z1-9 -]" >
+            </fieldset>
+            <fieldset>
+            <label for="email">Email *:</label>
+            <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
+            </fieldset>
+            <fieldset>
+            <label for="tel">Phone Number *:</label>
+            <input id="tel" type="tel" name="phone" placeholder="(###)-###-####" required>
+            </fieldset>
+            <fieldset>
+            <label  for="title">Business Title *:</label>
+            <input id="title" type="text" name="title" required >
+            </fieldset>
+            <fieldset>
+            <legend>Membership Level</legend>
+                <label>Non-Profit<input type="radio" name="membership" value="Np"></label>
+                <label>Bronze<input type="radio" name="membership" value="Bronze"></label>
+                <label>Silver<input type="radio" name="membership" value="Silver"></label>
+                <label>Gold<input type="radio" name="membership" value="Gold"></label>
+            </fieldset>
+            <div>
+            <label for="desc">Business Desc :</label>
+            <input id="desc" type="text" name="description" >
+            </div>
+            <input id="date" type="hidden">
+
+            <button type="submit">Submit Form</button>
+        </form>
+        <section id="member">
+        <h2>Membership Level Benefits</h2>
+        <h4>Non-Profit Membership</h4>
+        <ul>
+            <li>For Non-Profit organizations there is no fee.</li>
+        </ul>
+        <h4>Bronze Membership</h4>
+        <ul>
+            <li>15% Discount on events</li>
+            <li>10% Discount on advertising</li>
+            <li>Fee of $50/Month</li>
+        </ul>
+        <h4>Silver Membership</h4>
+        <ul>
+            <li>25% Discount on events</li>
+            <li>15% Discount on advertising</li>
+            <li>Free Participation in the trade fair</li>
+            <li>Fee of $100/Month</li>
+        </ul>
+        <h4>Gold Membership</h4>
+        <ul>
+            <li>50% Discount on events</li>
+            <li>50% Discount on advertising</li>
+            <li>Free Participation in the trade fair</li>
+            <li>5 Free featured ads per year</li>
+            <li>1 free training per quarter</li>
+            <li>Fee of $100/Month</li>
+        </ul>
+        </section>
+
+    </main>
+</body>
+</html>
