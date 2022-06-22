@@ -14,9 +14,9 @@ else{
 
 let email_date = document.querySelector('#date');
 
-let date = new Date();
+let date1 = new Date();
 
-email_date.value = date;
+email_date.value = date1;
 
 
 
@@ -47,41 +47,3 @@ email_date.value = date;
 
 
 
-fetch("./data.json")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-      console.table(jsonObject);  // temporary checking for valid response and data parsing
-      const business = jsonObject['business'];
-      for (let i = 0; i < business.length; i++ ) {
-           let card = document.createElement('section');
-           let h2 = document.createElement('h2');
-           let para = document.createElement('p');
-           let para_2 = document.createElement('p');
-           let img = document.createElement('img');
-         
-           h2.textContent = business[i].name;
-           card.appendChild(h2);
-           document.querySelector('div.cards').appendChild(card);
-
-           para.textContent = "Address: " + business[i].address;
-           card.appendChild(para);
-           document.querySelector('div.cards').appendChild(card);
-
-           para_2.textContent ="Phone Number: " + business[i].phone;
-           card.appendChild(para_2);
-           document.querySelector('div.cards').appendChild(card);
-
-           img.setAttribute('src', business[i].imageurl);
-           img.setAttribute('alt', "An image of " + business[i].name + ' ' + business[i].lastname);
-           card.appendChild(img);
-           document.querySelector('div.cards').appendChild(card);
-      
-    }
-  
-  })
-
-  .catch(function(error){
-    alert("Sorry the data is not available now.");
-});
