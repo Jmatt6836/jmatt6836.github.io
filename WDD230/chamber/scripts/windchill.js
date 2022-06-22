@@ -17,3 +17,71 @@ let email_date = document.querySelector('#date');
 let date = new Date();
 
 email_date.value = date;
+
+
+
+
+
+
+// let request = json.parse('/data.json');
+
+// fetch(request)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (jsonObject) {
+//     console.table(jsonObject);  // temporary checking for valid response and data parsing
+//   });
+
+// const business = jsonObject['business']
+
+// function displayBusiness(business) {  // Create elements to add to the document
+//     let card = document.createElement('section');
+//     let h2 = document.createElement('h2');    // Change the textContent property of the h2 element to contain the prophet's full name
+//     h2.textContent = business.name + ' ' + prophet.lastname;
+//     // Add/append the section(card) with the h2 element
+//     card.appendChild(h2);
+//     // Add/append the existing HTML div with the cards class with the section(card)
+//     document.querySelector('div.cards').appendChild(card);
+//   }
+
+
+
+fetch("./data.json")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+      console.table(jsonObject);  // temporary checking for valid response and data parsing
+      const business = jsonObject['business'];
+      for (let i = 0; i < business.length; i++ ) {
+           let card = document.createElement('section');
+           let h2 = document.createElement('h2');
+           let para = document.createElement('p');
+           let para_2 = document.createElement('p');
+           let img = document.createElement('img');
+         
+           h2.textContent = business[i].name;
+           card.appendChild(h2);
+           document.querySelector('div.cards').appendChild(card);
+
+           para.textContent = "Address: " + business[i].address;
+           card.appendChild(para);
+           document.querySelector('div.cards').appendChild(card);
+
+           para_2.textContent ="Phone Number: " + business[i].phone;
+           card.appendChild(para_2);
+           document.querySelector('div.cards').appendChild(card);
+
+           img.setAttribute('src', business[i].imageurl);
+           img.setAttribute('alt', "An image of " + business[i].name + ' ' + business[i].lastname);
+           card.appendChild(img);
+           document.querySelector('div.cards').appendChild(card);
+      
+    }
+  
+  })
+
+  .catch(function(error){
+    alert("Sorry the data is not available now.");
+});
