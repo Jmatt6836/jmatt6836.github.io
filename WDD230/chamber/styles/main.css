@@ -13,10 +13,12 @@ main{
     background-color: lightblue;
     margin: 0px;
     text-align: center;
-    padding: 25px;
-    display: grid;
-    grid-template-columns: 1fr;   
+    padding: 25px; 
 
+}
+#index-main{
+    display: grid;
+    grid-template-columns: 1fr;  
 }
 h1{
     padding-top: 20px;
@@ -190,6 +192,24 @@ footer{
 }
 .downtown{
     max-width: 500px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards section {
+    width: 300px;
+    height: 350px;
+}
+
+
+.cards img {
+    max-width: 150px;
+    border-radius: 30px;
+    width: 100%;
 }
 
 
