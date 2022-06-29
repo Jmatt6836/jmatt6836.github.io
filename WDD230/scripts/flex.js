@@ -4,6 +4,9 @@ let mainnav = document.querySelector('nav');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')});
 
+
+
+
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
 
