@@ -130,7 +130,7 @@ form{
     
 
 }
-input{
+input, textarea{
     width: 100%;
     border: 1px solid black;
     margin: 0 0 5px;

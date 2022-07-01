@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Homepage of a ficticious Gilbert Chamber of Commmerece made by Josh Skouson.">
+    <title>Gilbert Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/main.css" >
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script defer src="../scripts/main.js"></script>
+    <script defer src="../scripts/flex.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/Chamberlogo.webp" alt="Logo for City of Gilbert Chamber of Commerce">
+        <h1>Gilbert Chamber of Commerce</h1>
+        <nav>
+            <ul>
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+        <div class="meeting-alert">
+          <h2> Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+      </div>
+     <h2 class="visits"></h2>
+    </header>
+    <main>
+        <h2>Feel Free to contact us if you have any questions!</h2>
+        <form>
+            <fieldset>
+                <label for="fname">First Name *:</label>
+                <input id="fname" name="first_name" required>
+                </fieldset>
+                <label for="lname">Last Name *:</label>
+                <input id="lname" name="last_name" required>
+            <fieldset>
+            <fieldset>
+                <label for="email">Email *:</label>
+                <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
+                </fieldset>
+                <fieldset>
+                <label for="tel">Phone Number *:</label>
+                <input id="tel" type="tel" name="phone" placeholder="(###)-###-####" required>
+            </fieldset>
+            <fieldset>
+                <label for="message">Comments</label>
+                <textarea id="message" name="message"  rows="5"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p class="namefoot">&copy;<span id="currentyear"></span> Gilbert Chamber Josh Skouson</p>
+        <p>WDD 230 Project</p>
+        <p class="datefoot">Last Date Modified: <span id="lastdate"></span></p>
+        
+    </footer>
+        
+</body>
+</html>

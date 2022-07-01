@@ -30,41 +30,41 @@ if (weekname === 'Monday' || weekname === 'Tuesday'){
     meetingAlert.style.display = "none";
 }
 
-const images = document.querySelector(img);
+// const images = document.querySelector(img);
 
-function preloadimage(img){
-    const src = img.getAttribute("src");
-    if(!src) {
-        return;
-    }
+// function preloadimage(img){
+//     const src = img.getAttribute("src");
+//     if(!src) {
+//         return;
+//     }
 
-    img.src = src;
-}
+//     img.src = src;
+// }
 
-const imgOptions = {
-};
+// const imgOptions = {
+// };
 
-const imgObserver = new IntersectionObserver((entries,imgObserver) => {
-    entries.forEach(entry => {
-        if(!entry.isIntersecting){
-            return;
-        }
-        else{
-            preloadimage(entry.target);
-            imgObserver.unobserve(entry.target);
-        }
-    });
-}, imgOptions);
+// const imgObserver = new IntersectionObserver((entries,imgObserver) => {
+//     entries.forEach(entry => {
+//         if(!entry.isIntersecting){
+//             return;
+//         }
+//         else{
+//             preloadimage(entry.target);
+//             imgObserver.unobserve(entry.target);
+//         }
+//     });
+// }, imgOptions);
 
-images.forEach(image => {
-    imgObserver.observe(image)
-})
-const lastDisplay = document.querySelector(".sincelast");
+// images.forEach(image => {
+//     imgObserver.observe(image)
+// })
+// const lastDisplay = document.querySelector(".sincelast");
 
-let lastvisit =  Number(window.localStorage.setItem("last-visit", getDay()))
+// let lastvisit =  Number(window.localStorage.setItem("last-visit", getDay()))
 
-let currentvisit = getDay()
+// let currentvisit = getDay()
 
-let sincelastvisit = currentvisit - lastvisit
+// let sincelastvisit = currentvisit - lastvisit
 
-lastDisplay.textcontent = sincelastvisit
+// lastDisplay.textcontent = sincelastvisit
