@@ -113,7 +113,7 @@ header img{
 }
 #member{
     background-color: #3B429F;
-    grid-column: 2/3;
+    grid-column: 1/3;
     font-size: 20px;
 
 }
@@ -360,5 +360,11 @@ footer{
     }
     form{
         grid-column: 1/2;
+    }
+    #member{
+        background-color: #3B429F;
+        grid-column: 2/3;
+        font-size: 20px;
+    
     }
 }
