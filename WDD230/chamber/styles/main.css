@@ -149,12 +149,13 @@ input[type="radio"]{
     height: 500px;
 }
 .spot{
-    
+    padding: 5px;
     margin: 10px;
     height: 220px;
 }
 .spot3{
     display: none;
+    padding: 5px;
 }
 .join{
     display: none;
