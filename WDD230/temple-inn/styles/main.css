@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Roboto&display=swap');
+
+main {
+    font-family: Roboto, Radio Canada;
+    margin:0;
+
+}
+header{
+    background-color: #283845;
+    color: white;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 20px 51px;
+    display: none;
+}
+.responsive li{
+    display: block;
+}
+li:first-child{
+    display: block;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+nav a:hover{
+    background-color: gray;
+    
+
+}
+body{
+    background-color: #F2D492;
+}
+.herobox{
+    position: relative;
+    border: none;
+}
+.heroimg{
+    width: 100%;
+    height: 450px;
+}
+.herobox h2{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 30px;
+    text-shadow: 3px 3px rgba(0, 0, 0, .3);
+    color: lightgray;
+}
+.herobox button{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+button{
+    color: white;
+    background-color: #202C39;
+    font-size: 1.5em;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, .3);
+}
+button:hover{
+    background-color: gray;
+}
+.weathercard{
+    background-color: #F29559;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+    
+}
+
+.temples{
+    max-width: 500px;
+}
+/* Slideshow container */
+section.temple-slideshow {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  box-shadow: 3px solid black ;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  margin-top: 5px;
+  height: 15px;
+  width: 15px;
+  margin: 4px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+footer{
+    background-color: #283845;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+
+@media screen and (min-width: 900px) {
+   nav ul{
+        flex-direction: row;
+    }
+    nav li{
+        display: block;
+        }
+    
+    li:first-child{
+        display: none;
+        }
+    }

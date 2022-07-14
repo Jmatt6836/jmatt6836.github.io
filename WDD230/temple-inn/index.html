@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn and Suites</title>
+    <meta name="Description" content="The ficticious website for the Temple Inn and Suites made by Josh Skouson.">
+    <link rel="stylesheet" href="styles/main.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Inn and Suites</h1>
+        <nav>
+            <ul>
+                <li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="herobox">
+        <img src="images/templeimage.jpeg" class="heroimg" alt="Beautiful image of the Washington D.C. Temple">
+        <h2>Find Rest after helping God's Children at Temple Inn and Suites!</h2>
+        <button type="button">Find a Reservation Today!</button>
+        </section>
+        <section class="weathercard">
+            <section class="current">
+            <h2>Current Weather:</h2>
+            <img id="weather-icon" src="" alt="">
+            <h3 id="fig-caption"></h3>
+            <p>Current Temperature: <span id="current-temp"></span><span>°</span></p>
+            <p>Wind Speed: <span id="wind"></span></p>
+            </section>
+            <section class="forecast">
+                <h2>Forecast:</h2>
+                <img id="weather-icon" src="" alt="">
+                <h3 id="fig-caption"></h3>
+                <p>Current Temperature: <span id="current-temp"></span><span>°</span></p>
+                <p>Wind Speed: <span id="wind"></span></p>
+                <img id="weather-icon" src="" alt="">
+                <h3 id="fig-caption"></h3>
+                <p>Current Temperature: <span id="current-temp"></span><span>°</span></p>
+                <p>Wind Speed: <span id="wind"></span></p>
+                <img id="weather-icon" src="" alt="">
+                <h3 id="fig-caption"></h3>
+                <p>Current Temperature: <span id="current-temp"></span><span>°</span></p>
+                <p>Wind Speed: <span id="wind"></span></p>
+
+            </section>
+        
+
+        </section>
+        <h2>Enjoy Learning about some of our amazing temples!</h2>
+        <section class="temple-slideshow">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="temples"  src="images/vegas.jpeg" >
+                <div class="text">The beautiful Las Vegas Temple, </div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="temples" src="images/Nauvoo.jpeg" >
+                <div class="text">Caption Two</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="temples"  src="images/Manhattan-New-York-Temple2.jpeg" >
+                <div class="text">Caption Three</div>
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <h3>Temple Inn and Suites</h3>
+        <section>
+
+            <h3>Contact Info</h3>
+            <p>Address: 4800 Montgomery Ln #300, Bethesda, MD 20814 </p>
+            <p>Phone Number: (240)-555-1234</p>
+        </section>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382.0371037802813!2d-77.09568852134167!3d38.98313526288582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1657759510971!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </footer>
+</body>
+</html>
