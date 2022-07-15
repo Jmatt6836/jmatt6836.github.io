@@ -24,7 +24,46 @@
     </header>
 
     <main>
-        
+        <form>
+            <fieldset>
+                <label for="fname">First Name *:</label>
+                <input id="fname" name="first_name" required>
+                
+                <label for="lname">Last Name *:</label>
+                <input id="lname" name="last_name" required>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email *:</label>
+                <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
+            </fieldset>
+            <fieldset>
+                <label for="tel">Phone Number *:</label>
+                <input id="tel" type="tel" name="phone" placeholder="(###)-###-####" required>
+            </fieldset>
+            <fieldset>
+                <label for="arrival">Arrival Date *:</label>
+                <input id="arrival" type="date" name="arrival"  required>
+                <label for="departure">Departure Date *:</label>
+                <input id="departure" type="date" name="departure"  required>
+            </fieldset>
+            <fieldset>
+            <label for="quantity">How many rooms will you be needing?(if more than 5 rooms are needed, please call us for special rates):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            </fieldset>
+            <fieldset>
+                <legend>Types of Rooms needed</legend>
+                    <label>2 Twin Room<input type="number" name="room" value="twin"></label>
+                    <label>2 Queen Room<input type="number" name="room" value="queen"></label>
+                    <label>1 King Room<input type="number" name="room" value="king"></label>
+                    <label>Suite<input type="number" name="room" value="Suite"></label>
+                </fieldset>
+            <fieldset>
+                <label for="message">Comments</label>
+                <textarea id="message" name="message"  rows="5"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+        </form>
     </main>
     <footer>
         <h3>Temple Inn and Suites</h3>
