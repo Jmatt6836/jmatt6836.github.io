@@ -195,10 +195,22 @@ section.temple-slideshow {
   from {opacity: .4} 
   to {opacity: 1}
 }
+.servicespg h2{
+    text-align: center;
+}
 .services{
     display: flex;
     background-color: #B8B08D;
 
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-card-1, .button-card-2{
+    background-color: #F29559;
+    text-align: center;
+    max-width: 500px;
 }
 
 
