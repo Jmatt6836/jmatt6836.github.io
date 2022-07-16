@@ -1,6 +1,5 @@
-
 {
-    "temples": [
+  "temples": [
     {
       "name": "Las Vegas Temple",
       "address": "827 Temple View Dr Las Vegas NV 89110-2920 United States",
@@ -11,32 +10,31 @@
       "imageurl": "https://assets.ldscdn.org/a2/87/a2876cf93e9b9908d223e09f4be65ae23cead8d4/las_vegas_temple_lds.jpg"
     },
     {
-        "name": "Manhattan New York Temple",
-        "address": "125 Columbus Ave, Fourth Floor New York NY 10023-6514 United States",
-        "phone": "917-441-8220",
-        "schedule": "Every Hour and a Half",
-        "dedication": "June 13th 2004",
-        "services": "Clothing Rental Available, No Cafeteria Available, No Patron Housing Available, Distribution Center Nearby",
-        "imageurl": "https://assets.ldscdn.org/f5/79/f57938320f6c5c415d73903c3ca9d07bd5185018/manhattan_temple_lds.jpeg"
-      },
-      {
-        "name": "Gilbert Arizona Temple",
-        "address": "3301 S Greenfield Rd Gilbert AZ 85297 United States",
-        "phone": "480-822-5000",
-        "schedule": "hourly",
-        "dedication": "Mar. 2nd 2014",
-        "services": "Clothing Rental Available, No Cafeteria Available, No Patron Housing Available, Distribution Center Nearby",
-        "imageurl": "https://assets.ldscdn.org/1a/9b/1a9b4d17fab94f3ddfc0504cbe9bfb16ef2b3186/gilbert_arizona_temple.jpeg"
-      },
-      {
-        "name": "Washington DC Temple",
-        "address": "9900 Stoneybrook Dr Kensington MD 20895-3199 United States",
-        "phone": "Currently Closed",
-        "schedule": "Currently Closed",
-        "dedication": "Nov. 19th 1974",
-        "services": "Currently Closed",
-        "imageurl": "https://assets.ldscdn.org/1d/54/1d544493ab28695b7030205cd94e5cd038b603cf/washington_dc_mormon_temple.jpeg"
-      }
-    ]
-
+      "name": "Manhattan New York Temple",
+      "address": "125 Columbus Ave, Fourth Floor New York NY 10023-6514 United States",
+      "phone": "917-441-8220",
+      "schedule": "Every Hour and a Half",
+      "dedication": "June 13th 2004",
+      "services": "Clothing Rental Available, No Cafeteria Available, No Patron Housing Available, Distribution Center Nearby",
+      "imageurl": "https://assets.ldscdn.org/f5/79/f57938320f6c5c415d73903c3ca9d07bd5185018/manhattan_temple_lds.jpeg"
+    },
+    {
+      "name": "Gilbert Arizona Temple",
+      "address": "3301 S Greenfield Rd Gilbert AZ 85297 United States",
+      "phone": "480-822-5000",
+      "schedule": "hourly",
+      "dedication": "Mar. 2nd 2014",
+      "services": "Clothing Rental Available, No Cafeteria Available, No Patron Housing Available, Distribution Center Nearby",
+      "imageurl": "https://assets.ldscdn.org/1a/9b/1a9b4d17fab94f3ddfc0504cbe9bfb16ef2b3186/gilbert_arizona_temple.jpeg"
+    },
+    {
+      "name": "Washington DC Temple",
+      "address": "9900 Stoneybrook Dr Kensington MD 20895-3199 United States",
+      "phone": "Currently Closed",
+      "schedule": "Currently Closed",
+      "dedication": "Nov. 19th 1974",
+      "services": "Currently Closed",
+      "imageurl": "https://assets.ldscdn.org/1d/54/1d544493ab28695b7030205cd94e5cd038b603cf/washington_dc_mormon_temple.jpeg"
+    }
+  ]
 }
