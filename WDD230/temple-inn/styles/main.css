@@ -212,6 +212,16 @@ section.temple-slideshow {
     text-align: center;
     max-width: 500px;
 }
+fieldset{
+    border: medium none;
+    margin: auto;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    line-height: 25px;
+}
 
 
 footer{
