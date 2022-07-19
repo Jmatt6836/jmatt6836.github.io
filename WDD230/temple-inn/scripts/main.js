@@ -47,7 +47,7 @@ fetch(apiURL)
   const requestURL =  'https://jmatt6836.github.io/WDD230/temple-inn/scripts/temple.json'
 
 
-  function displayBusiness(){
+  function displayTemples(){
     fetch(requestURL)
       .then(function (response) {
         return response.json();
@@ -100,5 +100,5 @@ fetch(apiURL)
           }
         }
 
-  displayBusiness();
+displayTemples();
 
