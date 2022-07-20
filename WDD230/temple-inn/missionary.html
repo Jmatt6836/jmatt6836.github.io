@@ -7,11 +7,13 @@
     <title>Temple Inn and Suites</title>
     <meta name="Description" content="The ficticious website for the Temple Inn and Suites made by Josh Skouson.">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/ham.js"></script>
 </head>
 <body>
     <header>
+        <img src="images/Temple Inn & Suites.png" alt="Logo for Temple Inn & Suites">
         <h1>Temple Inn and Suites</h1>
         <nav>
             <ul>
@@ -33,6 +35,29 @@
                 <li>Covered Long Term Parking</li>
             </ul>
         </section>
+        <form>
+            <fieldset>
+                <label for="fname">First Name *:</label>
+                <input id="fname" name="first_name" required>
+                </fieldset>
+                <label for="lname">Last Name *:</label>
+                <input id="lname" name="last_name" required>
+            <fieldset>
+            <fieldset>
+                <label for="email">Email *:</label>
+                <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
+                </fieldset>
+                <fieldset>
+                <label for="tel">Phone Number *:</label>
+                <input id="tel" type="tel" name="phone" placeholder="(###)-###-####" required>
+            </fieldset>
+            <fieldset>
+                <label for="message">Comments</label>
+                <textarea id="message" name="message"  rows="5"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+        </form>
     </main>
 
     <footer>

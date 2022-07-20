@@ -11,6 +11,11 @@ header{
     font-family: roboto;
     min-height: 200px;
 }
+header h1{
+    text-align: center;
+    padding-left: 30px;
+
+}
 nav ul{
     display: flex;
     flex-direction: column;
@@ -207,11 +212,13 @@ section.temple-slideshow {
 }
 .services{
     display: flex;
+    flex-wrap: wrap;
     background-color: #B8B08D;
 
 }
 .buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .button-card-1, .button-card-2{
@@ -266,7 +273,7 @@ footer{
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 500px) {
    nav ul{
         flex-direction: row;
     }
@@ -277,4 +284,13 @@ footer{
     nav li:first-child{
         display: none;
         }
+    }
+    .services{
+        display: flex;
+        background-color: #B8B08D;
+    
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
     }
