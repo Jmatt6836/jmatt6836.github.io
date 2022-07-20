@@ -275,6 +275,9 @@ footer img{
     width: 50px;
     height: 50px;
 }
+footer iframe{
+    display: none;
+}
 
 
 @media screen and (min-width: 500px) {
@@ -297,4 +300,7 @@ footer img{
     .buttons{
         display: flex;
         justify-content: space-evenly;
+    }
+    footer iframe{
+        display: block;
     }
